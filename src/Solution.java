@@ -3,19 +3,18 @@ public class Solution {
         boolean espacio = false;
         String str = "";
 
-        for(char caracter : s.toCharArray()){
-            if(Character.isLetter(caracter)){
+        for(char caracteres : s.toCharArray()){
+            if(Character.isLetter(caracteres)){
                 if(espacio == true){
-                    str += Character.toUpperCase(caracter);
+                    str += Character.toUpperCase(caracteres);
                     espacio = false;
                 } else {
-                    str += caracter;
+                    str += caracteres;
                 }
             } else {
                 espacio = true;
             }
         }
-
         return str;
     }
 }
